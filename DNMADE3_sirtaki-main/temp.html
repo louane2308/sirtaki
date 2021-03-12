@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<script>
+
+		</script>
+		<style>
+		  #idTextarea { position: absolute; right: 10px; bottom: 35px;}
+		  #idBouton { position: absolute; right: 10px; bottom: 10px;}
+		</style>
+  	</head>
+
+  	<body style='margin : 0px; overflow: hidden;'>
+		  <textarea id="idTextarea" rows="10" cols="50" placeholder="Voici une indication">
+			  time: 100;duration: 2.5;
+		  </textarea>
+		  <button id="idBouton">danse !</button>
+		  <script>
+              var b = document.querySelector('#idBouton');
+              var t = document.querySelector('#idTextarea');
+
+              function getChoreParams() {
+				  var tChore = t.value.split('\n');
+				  console.log(tChore[0]);
+              }
+              b.onclick = getChoreParams;
+
+            </script>
+
+  	</body>
+</html>
