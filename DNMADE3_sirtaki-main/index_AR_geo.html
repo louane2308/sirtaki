@@ -46,15 +46,15 @@
              vr-mode-ui="enabled: false">
 
         <a-assets>
-            <a-asset-item id="3Dmodel" src="./assets/emotion/joie.glb"></a-asset-item>
+            <a-asset-item id="joie" src="./assets/emotion/joie.glb"></a-asset-item>
           <!--  <a-asset-item id="3Dmodel" src="./assets/emotion/peur.glb"></a-asset-item> -->
             <audio id="zorba" src="./assets/audio/zorba.mp3" preload="auto" loop="false"></audio>
         </a-assets>
 
         <!-- MODELE -->
-        <a-entity  id ="danseur" position="0 0 0" rotation="90 90 0"
+        <a-entity  id ="joie" position="0 0 0" rotation="90 90 0"
                    scale="6 6 6"
-                   gltf-model="#3Dmodel"
+                   gltf-model="#joie"
                    gps-entity-place="latitude: 48.83337; longitude: 2.29583;"
                    animation-mixer>
         </a-entity>
@@ -65,7 +65,7 @@
                   gps-entity-place="latitude: 48.86067; longitude: 2.37398;">
         </a-shere> -->
 
-      <a-camera gps-camera='gpsMinDistance: 5' rotation-reader look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1'> </a-camera>
+      <a-camera gps-camera='gpsMinDistance: 15' rotation-reader look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1'> </a-camera>
     </a-scene>
 
     <!-- GESTION AUDIO -->
